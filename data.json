@@ -1,0 +1,32 @@
+[
+  {
+    "date": "11-January-2023",
+    "list": [
+      {
+        "description": "buy new pattern for quilt",
+        "status": "Not Done"
+      },
+      {
+        "description": "Need 2 AA batteries",
+        "status": "Done"
+      },
+      {
+        "description": "Make copy of back door key",
+        "status": "Not Done"
+      }
+    ]
+  },
+  {
+    "date": "14-February-2023",
+    "list": [
+      {
+        "description": "Remember to purchase her 12 red roses",
+        "status": "Not Done"
+      },
+      {
+        "description": "Book reservation for dinner",
+        "status": "Done"
+      }
+    ]
+  }
+]
