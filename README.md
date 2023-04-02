@@ -1,4 +1,4 @@
-# ShoppingList_app
+# ShoppingList_App
 The purpose of this application is to allow me to list all the things I need todo for any selected day.   Use a date picker UI control to chose a day to see my grocery list.  If there is nothing in localStorage, then make a fetch (or axios) call to data.json on your localhost (in the same folder that has your application.)
 
 In this homework assignment, you must use all these technologies;
