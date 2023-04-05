@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" >
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <title>Shopping List | Daling</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1>My Day</h1>
-            <div class="row">
-                date
-                <input type="date" id="date" value="2000-01-01">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shopping List | Eileen</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      input[type="checkbox"] {
+        margin: 10px;
+      }
+      tr {
+        border: 1px dotted gray;
+        text-align: left;
+        background-color: cornflowerblue;
+        height: 45px;
+        font-size: medium;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="text-align: center">
+      <h1 style="font-family: fantasy">My Day</h1>
+      <div class="row">
+        date
+        <input type="date" id="input_date" />
+        <div id="dayOfWeek" style="display: inline">123</div>
+      </div>
+      <h4 style="margin: 10px; font-family: cursive">Your List</h4>
+      <table id="table" style="margin: auto; width: 100%">
+        <tr id="lastRow">
+          <td>
+            <a id="add" style="margin: 10px; color: white">+ Add a task</a>
+            <div id="input_container" class="mb-3" style="display: none">
+              <input
+                id="input_text"
+                type="text"
+                class="form-control"
+                style="display: inline-block; width: 70%"
+              />
+              <button
+                id="saveBtn"
+                class="btn btn-outline-secondary"
+                type="button"
+              >
+                Save
+              </button>
             </div>
-            <div class="row">Your List:</div>
-            <ul id="list">
-                <a>+ Add a task</a>
-            </ul>
-
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-        <script src="script.js"></script>
-
-    </body>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div
+      id="error_alert"
+      class="alert alert-danger"
+      role="alert"
+      style="display: none; text-align: center"
+    >
+      Error loading quiz data. Please try again later.
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
